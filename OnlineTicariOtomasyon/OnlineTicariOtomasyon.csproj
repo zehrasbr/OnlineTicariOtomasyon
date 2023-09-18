@@ -133,6 +133,7 @@
     <Compile Include="Models\Class\Expense.cs" />
     <Compile Include="Models\Class\FaturaKalem.cs" />
     <Compile Include="Models\Class\Product.cs" />
+    <Compile Include="Models\Class\SalesStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
