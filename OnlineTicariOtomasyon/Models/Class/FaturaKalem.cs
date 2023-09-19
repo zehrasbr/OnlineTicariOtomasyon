@@ -15,5 +15,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public decimal UnitPrice { get; set; }
         public decimal TotalPrice { get; set; }
         public Bill Bill { get; set; }
+
     }
 }
