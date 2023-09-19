@@ -17,5 +17,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public decimal SalePrice { get; set; }
         public bool Status { get; set; }
         public string ProductImage { get; set; }
+        public Category Category { get; set; }
     }
 }

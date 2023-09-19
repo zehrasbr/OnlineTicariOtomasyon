@@ -11,5 +11,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         [Key]
         public int CategoryID { get; set; }
         public int CategoryName { get; set; }
+        public ICollection<Product> Products  { get; set; }
     }
 }
