@@ -18,5 +18,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public bool Status { get; set; }
         public string ProductImage { get; set; }
         public Category Category { get; set; }
+        public SalesStatus SalesStatus { get; set; }
     }
 }

@@ -13,5 +13,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public string EmployeeName { get; set; }
         public string EmployeeSurname { get; set; }
         public string EmployeeImage { get; set; }
+        public SalesStatus SalesStatus { get; set; }
     }
 }

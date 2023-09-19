@@ -17,5 +17,8 @@ namespace OnlineTicariOtomasyon.Models.Class
         public int Piece { get; set; }
         public decimal Price { get; set; }
         public decimal TotalPrice { get; set; }
+        public ICollection<Product> Products { get; set; }
+        public ICollection<Current> Currents { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }

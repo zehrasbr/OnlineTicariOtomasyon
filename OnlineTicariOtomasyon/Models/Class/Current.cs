@@ -14,5 +14,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public string CurrentSurname { get; set; }
         public string CurrentCity { get; set; }
         public string CurrentMail { get; set; }
+        public SalesStatus SalesStatus { get; set; }
     }
 }
