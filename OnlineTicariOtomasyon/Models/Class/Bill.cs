@@ -15,5 +15,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public DateTime Clock { get; set; }
         public string Deliverer { get; set; }
         public string DeliveryArea { get; set; }
+        public ICollection<FaturaKalem> FaturaKalems { get; set; }
     }
 }
