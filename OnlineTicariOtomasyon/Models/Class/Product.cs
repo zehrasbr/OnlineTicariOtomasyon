@@ -11,9 +11,11 @@ namespace OnlineTicariOtomasyon.Models.Class
     {
         [Key]
         public int ProductID { get; set; }
+
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string ProductName { get; set; }
+
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string ProductBrand { get; set; }
