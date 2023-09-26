@@ -13,7 +13,7 @@ namespace OnlineTicariOtomasyon.Models.Class
         public int CategoryID { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
-        public int CategoryName { get; set; }
+        public string CategoryName { get; set; }
         public ICollection<Product> Products  { get; set; }
     }
 }

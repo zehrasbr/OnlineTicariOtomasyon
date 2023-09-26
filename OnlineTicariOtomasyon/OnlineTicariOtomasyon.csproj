@@ -131,6 +131,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309261624108_TicariDb.cs" />
+    <Compile Include="Migrations\202309261624108_TicariDb.designer.cs">
+      <DependentUpon>202309261624108_TicariDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class\Admin.cs" />
     <Compile Include="Models\Class\Bill.cs" />
     <Compile Include="Models\Class\Category.cs" />
@@ -225,6 +230,11 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202309261624108_TicariDb.resx">
+      <DependentUpon>202309261624108_TicariDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
