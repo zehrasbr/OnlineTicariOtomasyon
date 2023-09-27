@@ -20,7 +20,7 @@ namespace OnlineTicariOtomasyon.Models.Class
         [Column(TypeName = "Varchar")]
         [StringLength(250)]
         public string EmployeeImage { get; set; }
-        public SalesStatus SalesStatus { get; set; }
+        public ICollection<SalesStatus> SalesStatus { get; set; }
         public Department Department { get; set; }
     }
 }

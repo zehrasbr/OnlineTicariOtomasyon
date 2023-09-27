@@ -10,15 +10,12 @@ namespace OnlineTicariOtomasyon.Models.Class
     {
         [Key]
         public int SalesStatusID { get; set; }
-        //ürün
-        //cari
-        //personel
         public DateTime Date { get; set; }
         public int Piece { get; set; }
         public decimal Price { get; set; }
         public decimal TotalPrice { get; set; }
-        public ICollection<Product> Products { get; set; }
-        public ICollection<Current> Currents { get; set; }
-        public ICollection<Employee> Employees { get; set; }
+        public Product Product { get; set; }
+        public Current Current { get; set; }
+        public Employee Employee { get; set; }
     }
 }

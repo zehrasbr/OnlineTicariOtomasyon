@@ -28,6 +28,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         [StringLength(250)]
         public string ProductImage { get; set; }
         public Category Category { get; set; }
-        public SalesStatus SalesStatus { get; set; }
+        public ICollection<SalesStatus> SalesStatus { get; set; }
     }
 }

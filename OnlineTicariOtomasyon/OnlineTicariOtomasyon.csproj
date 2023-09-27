@@ -135,6 +135,10 @@
     <Compile Include="Migrations\202309261624108_TicariDb.designer.cs">
       <DependentUpon>202309261624108_TicariDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309271633257_mig.cs" />
+    <Compile Include="Migrations\202309271633257_mig.designer.cs">
+      <DependentUpon>202309271633257_mig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class\Admin.cs" />
     <Compile Include="Models\Class\Bill.cs" />
@@ -234,6 +238,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202309261624108_TicariDb.resx">
       <DependentUpon>202309261624108_TicariDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309271633257_mig.resx">
+      <DependentUpon>202309271633257_mig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
