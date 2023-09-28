@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -186,6 +187,25 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Fonts\admin\401.html" />
+    <Content Include="Fonts\admin\404.html" />
+    <Content Include="Fonts\admin\500.html" />
+    <Content Include="Fonts\admin\assets\demo\chart-area-demo.js" />
+    <Content Include="Fonts\admin\assets\demo\chart-bar-demo.js" />
+    <Content Include="Fonts\admin\assets\demo\chart-pie-demo.js" />
+    <Content Include="Fonts\admin\assets\demo\datatables-demo.js" />
+    <Content Include="Fonts\admin\assets\img\error-404-monochrome.svg" />
+    <Content Include="Fonts\admin\charts.html" />
+    <Content Include="Fonts\admin\css\styles.css" />
+    <Content Include="Fonts\admin\index.html" />
+    <Content Include="Fonts\admin\js\datatables-simple-demo.js" />
+    <Content Include="Fonts\admin\js\scripts.js" />
+    <Content Include="Fonts\admin\layout-sidenav-light.html" />
+    <Content Include="Fonts\admin\layout-static.html" />
+    <Content Include="Fonts\admin\login.html" />
+    <Content Include="Fonts\admin\password.html" />
+    <Content Include="Fonts\admin\register.html" />
+    <Content Include="Fonts\admin\tables.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -200,6 +220,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
