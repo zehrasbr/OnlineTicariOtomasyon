@@ -187,25 +187,25 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Fonts\admin\401.html" />
-    <Content Include="Fonts\admin\404.html" />
-    <Content Include="Fonts\admin\500.html" />
-    <Content Include="Fonts\admin\assets\demo\chart-area-demo.js" />
-    <Content Include="Fonts\admin\assets\demo\chart-bar-demo.js" />
-    <Content Include="Fonts\admin\assets\demo\chart-pie-demo.js" />
-    <Content Include="Fonts\admin\assets\demo\datatables-demo.js" />
-    <Content Include="Fonts\admin\assets\img\error-404-monochrome.svg" />
-    <Content Include="Fonts\admin\charts.html" />
-    <Content Include="Fonts\admin\css\styles.css" />
-    <Content Include="Fonts\admin\index.html" />
-    <Content Include="Fonts\admin\js\datatables-simple-demo.js" />
-    <Content Include="Fonts\admin\js\scripts.js" />
-    <Content Include="Fonts\admin\layout-sidenav-light.html" />
-    <Content Include="Fonts\admin\layout-static.html" />
-    <Content Include="Fonts\admin\login.html" />
-    <Content Include="Fonts\admin\password.html" />
-    <Content Include="Fonts\admin\register.html" />
-    <Content Include="Fonts\admin\tables.html" />
+    <Content Include="Web\401.html" />
+    <Content Include="Web\404.html" />
+    <Content Include="Web\500.html" />
+    <Content Include="Web\assets\demo\chart-area-demo.js" />
+    <Content Include="Web\assets\demo\chart-bar-demo.js" />
+    <Content Include="Web\assets\demo\chart-pie-demo.js" />
+    <Content Include="Web\assets\demo\datatables-demo.js" />
+    <Content Include="Web\assets\img\error-404-monochrome.svg" />
+    <Content Include="Web\charts.html" />
+    <Content Include="Web\css\styles.css" />
+    <Content Include="Web\index.html" />
+    <Content Include="Web\js\datatables-simple-demo.js" />
+    <Content Include="Web\js\scripts.js" />
+    <Content Include="Web\layout-sidenav-light.html" />
+    <Content Include="Web\layout-static.html" />
+    <Content Include="Web\login.html" />
+    <Content Include="Web\password.html" />
+    <Content Include="Web\register.html" />
+    <Content Include="Web\tables.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -225,6 +225,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Fonts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
