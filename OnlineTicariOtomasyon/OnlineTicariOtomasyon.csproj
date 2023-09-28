@@ -131,13 +131,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202309261624108_TicariDb.cs" />
-    <Compile Include="Migrations\202309261624108_TicariDb.designer.cs">
-      <DependentUpon>202309261624108_TicariDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309271633257_mig.cs" />
-    <Compile Include="Migrations\202309271633257_mig.designer.cs">
-      <DependentUpon>202309271633257_mig.cs</DependentUpon>
+    <Compile Include="Migrations\202309280953530_mig.cs" />
+    <Compile Include="Migrations\202309280953530_mig.designer.cs">
+      <DependentUpon>202309280953530_mig.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class\Admin.cs" />
@@ -236,11 +232,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202309261624108_TicariDb.resx">
-      <DependentUpon>202309261624108_TicariDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309271633257_mig.resx">
-      <DependentUpon>202309271633257_mig.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202309280953530_mig.resx">
+      <DependentUpon>202309280953530_mig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

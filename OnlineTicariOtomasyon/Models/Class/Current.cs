@@ -23,6 +23,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         [Column(TypeName = "Varchar")]
         [StringLength(50)]
         public string CurrentMail { get; set; }
-        public ICollection<SalesStatus> SalesStatus { get; set; }
+        public ICollection<SalesStatus> SalesStatuses { get; set; }
     }
 }

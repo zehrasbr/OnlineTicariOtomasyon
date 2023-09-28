@@ -13,7 +13,7 @@ namespace OnlineTicariOtomasyon.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202309271633257_mig"; }
+            get { return "202309280953530_mig"; }
         }
         
         string IMigrationMetadata.Source
