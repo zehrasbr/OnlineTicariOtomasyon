@@ -15,5 +15,17 @@ namespace OnlineTicariOtomasyon.Controllers
             var degerler =  c.Categories.ToList();
             return View(degerler);
         }
+        [HttpGet]
+        public ActionResult KategoriEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult KategoriEkle(Category category)
+        {
+            c.Categories.Add(category);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
