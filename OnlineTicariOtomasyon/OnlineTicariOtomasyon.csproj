@@ -223,6 +223,7 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Category\KategoriEkle.cshtml" />
+    <Content Include="Views\Category\KategoriGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

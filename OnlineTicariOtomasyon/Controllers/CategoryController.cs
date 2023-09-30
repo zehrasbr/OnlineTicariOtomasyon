@@ -34,5 +34,17 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult KategoriGetir(int id)
+        {
+            var ctg = c.Categories.Find(id);
+            return View("KategoriGetir", ctg);
+        }
+        public ActionResult KategoriGuncelle(Category category)
+        {
+            var ctg = c.Categories.Find(category.CategoryID);
+            ctg.CategoryName = category.CategoryName;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
