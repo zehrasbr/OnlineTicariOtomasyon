@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using OnlineTicariOtomasyon.Models.Class;
 
 namespace OnlineTicariOtomasyon.Controllers
 {
     public class CategoryController : Controller
     {
-        // GET: Category
+        Context c = new Context();
         public ActionResult Index()
         {
-            return View();
+            var degerler =  c.Categories.ToList();
+            return View(degerler);
         }
     }
 }
