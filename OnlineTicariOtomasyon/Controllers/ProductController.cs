@@ -15,5 +15,17 @@ namespace OnlineTicariOtomasyon.Controllers
             var urunler = c.Products.ToList();
             return View(urunler);
         }
+        [HttpGet]
+        public ActionResult YeniUrun()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniUrun(Product p)
+        {
+            c.Products.Add(p);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
