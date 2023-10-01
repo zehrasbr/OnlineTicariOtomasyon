@@ -27,9 +27,11 @@
     <p></p>
     @Html.TextBoxFor(x => x.SalePrice, new { @class = "form-control" })
     <p></p>
+    @*@Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })
+    @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.value, new { @class = "form-control" })*@
     @Html.LabelFor(x => x.Category.CategoryID)
-    <p></p>
-    @Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })
+        <p></p>
+        @Html.TextBoxFor(x => x.Category, new { @class = "form-control" })
     <p></p>
     @Html.LabelFor(x => x.ProductImage)
     <p></p>
