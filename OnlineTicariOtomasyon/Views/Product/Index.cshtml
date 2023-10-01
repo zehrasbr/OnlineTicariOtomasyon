@@ -1,0 +1,33 @@
+﻿@using OnlineTicariOtomasyon.Models.Class;
+@model List<Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>ÜRÜN</th>
+        <th>MARKA</th>
+        <th>STOK</th>
+        <th>ALIŞ FİYAT</th>
+        <th>SATIŞ FİYAT</th>
+        <th>KATEGORİ</th>
+        <th>GÖRSEL</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductID</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.ProductBrand</td>
+                    <td>@item.ProductStock</td>
+                    <td>@item.PurchasePrice</td>
+                    <td>@item.SalePrice</td>
+                    <td>@item.Category.CategoryName</td>
+                    <td>@item.ProductImage</td>
+                </tr>
+            }
+</table>
