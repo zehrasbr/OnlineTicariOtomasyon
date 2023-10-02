@@ -26,6 +26,7 @@ namespace OnlineTicariOtomasyon.Controllers
              ViewBag.dgr1 = deger1;
             return View();
         }
+
         [HttpPost]
         public ActionResult YeniUrun(Product p)
         {
