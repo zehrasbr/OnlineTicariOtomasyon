@@ -41,9 +41,17 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
-        public ActionResult UrunGetir()
+        public ActionResult UrunGetir(int id)
         {
-            return View();
+            List<SelectListItem> deger1 = (from x in c.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryID.ToString()
+                                           }).ToList();
+            ViewBag.dgr1 = deger1;
+            var urundeger = c.Products.Find(id);
+            return View("UrunGetir", urundeger);
         }
     }
 }
