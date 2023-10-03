@@ -138,6 +138,10 @@
     <Compile Include="Migrations\202309280953530_mig.designer.cs">
       <DependentUpon>202309280953530_mig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202310031803355_mig2.cs" />
+    <Compile Include="Migrations\202310031803355_mig2.designer.cs">
+      <DependentUpon>202310031803355_mig2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class\Admin.cs" />
     <Compile Include="Models\Class\Bill.cs" />
@@ -230,6 +234,9 @@
     <Content Include="Views\Product\YeniUrun.cshtml" />
     <Content Include="Views\Product\UrunGetir.cshtml" />
     <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Department\DepartmanEkle.cshtml" />
+    <Content Include="Views\Department\DepartmanGetir.cshtml" />
+    <Content Include="Views\Department\DepartmanDetay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -265,6 +272,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202309280953530_mig.resx">
       <DependentUpon>202309280953530_mig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310031803355_mig2.resx">
+      <DependentUpon>202310031803355_mig2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<table class="table table-bordered" style="margin-top:20px">
+<table class="table table-hover" style="margin-top:20px">
     <tr>
         <th>ID</th>
         <th>Kategori Adı</th>
@@ -23,8 +23,8 @@
                 @item.CategoryName
             </td>
             <td><a href="/Category/KategoriSil/@item.CategoryID" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="/Category/KategoriGetir/@item.CategoryID" class="btn btn-outline-success">Güncelle</a></td>
+            <td><a href="/Category/KategoriGetir/@item.CategoryID" class="btn btn-outline-warning">Güncelle</a></td>
         </tr>
     }
 </table>
-<a href="/Category/KategoriEkle" class="btn btn-outline-dark">Kategori Ekle</a>
+<a href="/Category/KategoriEkle" class="btn btn-outline-success">Kategori Ekle</a>

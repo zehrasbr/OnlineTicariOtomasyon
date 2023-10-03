@@ -13,8 +13,43 @@ namespace OnlineTicariOtomasyon.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var degerler = c.Departments.ToList();
+            var degerler = c.Departments.Where(x=>x.Status == true).ToList();
             return View(degerler);
+        }
+        [HttpGet]
+        public ActionResult DepartmanEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult DepartmanEkle(Department d)
+        {
+            c.Departments.Add(d);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult DepartmanSil(int id)
+        {
+            var dep = c.Departments.Find(id);
+            dep.Status = false;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult DepartmanGetir(int id) 
+        {
+            var dpt = c.Departments.Find(id);
+            return View("DepartmanGetir",dpt);
+        }  
+        public ActionResult DepartmanGuncelle(Department p)
+        {
+            var dept = c.Departments.Find(p.DepartmentID);
+            dept.DepartmentName = p.DepartmentName;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult DepartmanDetay(int id) 
+        {
+            return View();
         }
     }
 }

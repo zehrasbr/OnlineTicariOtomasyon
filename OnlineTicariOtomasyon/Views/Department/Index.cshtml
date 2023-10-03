@@ -5,11 +5,11 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<table class="table table-bordered" style="margin-top:20px">
+<table class="table table-hover" style="margin-top:20px">
     <tr>
         <th>ID</th>
         <th>Departman Adı</th>
-        <th>Sil</th>
+        <th>Durum</th>
         <th>Güncelle</th>
         <th>Detaylar</th>
     </tr>
@@ -23,11 +23,11 @@
             <td>
                 @item.DepartmentName
             </td>
-            <td><a href="/Department/DepartmanSil/@item.DepartmentID" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="/Department/DepartmanGuncelle/@item.DepartmentID" class="btn btn-outline-success">Güncelle</a></td>
+            <td><a href="/Department/DepartmanSil/@item.DepartmentID" class="btn btn-outline-danger">Pasif Yap</a></td>
+            <td><a href="/Department/DepartmanGetir/@item.DepartmentID" class="btn btn-outline-warning">Güncelle</a></td>
             <td><a href="/Department/DepartmanDetay/@item.DepartmentID" class="btn btn-outline-info">Detaylar</a></td>
 
         </tr>
     }
 </table>
-<a href="/Department/DepartmanEkle" class="btn btn-outline-dark">Departman Ekle</a>
+<a href="/Department/DepartmanEkle" class="btn btn-outline-success">Departman Ekle</a>

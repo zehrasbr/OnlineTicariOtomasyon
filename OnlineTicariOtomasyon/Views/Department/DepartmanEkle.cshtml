@@ -1,0 +1,17 @@
+﻿@model OnlineTicariOtomasyon.Models.Class.Department
+@{
+    ViewBag.Title = "DepartmanEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Yeni Departman Sayfası</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.DepartmentName)
+    <p></p>
+    @Html.TextBoxFor(x => x.DepartmentName, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-dark">Kaydet</button>
+    <a href="/Department/Index/" class="btn btn-outline-dark">Geri</a>
+</form>

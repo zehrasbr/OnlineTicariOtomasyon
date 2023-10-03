@@ -6,18 +6,18 @@
 }
 
 <br />
-<table class="table table-bordered">
+<table class="table table-hover">
     <tr>
         <th>ID</th>
-        <th>ÜRÜN</th>
-        <th>MARKA</th>
-        <th>STOK</th>
-        <th>ALIŞ FİYAT</th>
-        <th>SATIŞ FİYAT</th>
-        <th>KATEGORİ</th>
-        <th>GÖRSEL</th>
-        <th>DURUMU</th>
-        <th>GÜNCELLE</th>
+        <th>Ürün</th>
+        <th>Marka</th>
+        <th>Stok</th>
+        <th>Alış Fiyat</th>
+        <th>satış Fiyat</th>
+        <th>Kategori</th>
+        <th>Görsel</th>
+        <th>Durumu</th>
+        <th>Güncelle</th>
     </tr>
     @foreach(var item in Model)
             {
@@ -31,8 +31,8 @@
                     <td>@item.Category.CategoryName</td>
                     <td>@item.ProductImage</td>
                     <td><a href="/Product/UrunSil/@item.ProductID" class="btn btn-outline-danger">Pasif Yap</a></td>
-                    <td><a href="/Product/UrunGetir/@item.ProductID" class="btn btn-outline-success">Güncelle</a></td>
+                    <td><a href="/Product/UrunGetir/@item.ProductID" class="btn btn-outline-warning">Güncelle</a></td>
                 </tr>
             }
 </table>
-<a href="/Product/YeniUrun/" class="btn btn-outline-dark">Ürün Ekle</a>
+<a href="/Product/YeniUrun/" class="btn btn-outline-success">Ürün Ekle</a>

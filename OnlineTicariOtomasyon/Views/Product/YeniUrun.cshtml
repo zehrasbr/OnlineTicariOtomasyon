@@ -28,7 +28,7 @@
     @Html.TextBoxFor(x => x.SalePrice, new { @class = "form-control" })
     <p></p>
     @*@Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })*@
-    @Html.LabelFor(x => x.Category.CategoryID)   
+    @Html.LabelFor(x => x.Category.CategoryID)
     <p></p>
     @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
     @*<p></p>*@
@@ -43,5 +43,6 @@
     @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
     <p></p>
     <button class="btn btn-outline-dark">Kaydet</button>
+    <a href="/Product/Index/" class="btn btn-outline-dark">Geri</a>
     <p></p>
 </form>

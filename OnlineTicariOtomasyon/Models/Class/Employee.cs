@@ -21,6 +21,7 @@ namespace OnlineTicariOtomasyon.Models.Class
         [StringLength(250)]
         public string EmployeeImage { get; set; }
         public ICollection<SalesStatus> SalesStatuses { get; set; }
-        public Department Department { get; set; }
+        public int Departmanid { get; set; }
+        public virtual Department Department { get; set; }
     }
 }
