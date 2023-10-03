@@ -53,5 +53,19 @@ namespace OnlineTicariOtomasyon.Controllers
             var urundeger = c.Products.Find(id);
             return View("UrunGetir", urundeger);
         }
+        public ActionResult UrunGuncelle(Product p)
+        {
+            var urun = c.Products.Find(p.ProductID);
+            urun.Status = p.Status;
+            urun.ProductName = p.ProductName;
+            urun.PurchasePrice = p.PurchasePrice;
+            urun.ProductBrand = p.ProductBrand;
+            urun.ProductStock = p.ProductStock;
+            urun.ProductImage = p.ProductImage;
+            urun.SalePrice = p.SalePrice;
+            urun.Kategoriid = p.Kategoriid;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
