@@ -50,6 +50,8 @@ namespace OnlineTicariOtomasyon.Controllers
         public ActionResult DepartmanDetay(int id) 
         {
             var degerler = c.Employees.Where(x=>x.Departmanid== id).ToList();
+            var dpt = c.Departments.Where(x => x.DepartmentID == id).Select(y => y.DepartmentName).FirstOrDefault();
+            ViewBag.d = dpt;
             return View(degerler);
         }
     }
