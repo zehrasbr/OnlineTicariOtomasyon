@@ -54,5 +54,9 @@ namespace OnlineTicariOtomasyon.Controllers
             ViewBag.d = dpt;
             return View(degerler);
         }
+        public ActionResult DepartmanPersonelSatis(int id)
+        {
+            return View();
+        }
     }
 }
