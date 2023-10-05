@@ -12,7 +12,7 @@ namespace OnlineTicariOtomasyon.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var degerler = c.Currents.ToList();
+            var degerler = c.Currents.Where(x=>x.Status==true).ToList();
             return View(degerler);
         }
         [HttpGet]
@@ -23,7 +23,16 @@ namespace OnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult YeniCari(Current p)
         {
+            //eklerken ilk olarak durumunu true olarak ekler
+            p.Status = true;
             c.Currents.Add(p);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult CariSil(int id)
+        {
+            var cr = c.Currents.Find(id);
+            cr.Status = false;
             c.SaveChanges();
             return RedirectToAction("Index");
         }
