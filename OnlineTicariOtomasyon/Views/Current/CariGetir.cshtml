@@ -1,0 +1,32 @@
+﻿@model OnlineTicariOtomasyon.Models.Class.Current
+@{
+    ViewBag.Title = "CariGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Cari Güncelleme Ekranı</h2>
+<br />
+@using(Html.BeginForm("CariGuncelle","Current",FormMethod.Post))
+            {
+    <div class="form-group">
+        @Html.HiddenFor(x => x.CurrentID)
+        @Html.LabelFor(x => x.CurrentName)
+        <p></p>
+        @Html.TextBoxFor(x => x.CurrentName, new { @class = "form-control" })
+        <p></p>
+        @Html.LabelFor(x => x.CurrentSurname)
+        <p></p>
+        @Html.TextBoxFor(x => x.CurrentSurname, new { @class = "form-control" })
+        <p></p>
+        @Html.LabelFor(x => x.CurrentCity)
+        <p></p>
+        @Html.TextBoxFor(x => x.CurrentCity, new { @class = "form-control" })
+        <p></p>
+        @Html.LabelFor(x => x.CurrentMail)
+        <p></p>
+        @Html.TextBoxFor(x => x.CurrentMail, new { @class = "form-control" })
+        <p></p>
+        <button class="btn btn-outline-success">Güncelle</button>
+        <a href="/Current/Index/" class="btn btn-outline-dark">Geri</a>
+    </div>
+            }

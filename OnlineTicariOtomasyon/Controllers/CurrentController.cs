@@ -36,5 +36,24 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult CariGetir(int id)
+        {
+            var cari = c.Currents.Find(id);
+            return View("CariGetir",cari);
+        }
+        public ActionResult CariGuncelle(Current p)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View("CariGetir");
+            }
+            var cari = c.Currents.Find(p.CurrentID);
+            cari.CurrentName = p.CurrentName;
+            cari.CurrentSurname = p.CurrentSurname;
+            cari.CurrentCity = p.CurrentCity;
+            cari.CurrentMail = p.CurrentMail;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

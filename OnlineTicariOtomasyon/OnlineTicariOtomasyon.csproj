@@ -241,6 +241,7 @@
     <Content Include="Views\Department\DepartmanPersonelSatis.cshtml" />
     <Content Include="Views\Current\Index.cshtml" />
     <Content Include="Views\Current\YeniCari.cshtml" />
+    <Content Include="Views\Current\CariGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
