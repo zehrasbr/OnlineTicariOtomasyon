@@ -15,5 +15,17 @@ namespace OnlineTicariOtomasyon.Controllers
             var degerler = c.Currents.ToList();
             return View(degerler);
         }
+        [HttpGet]
+        public ActionResult YeniCari()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniCari(Current p)
+        {
+            c.Currents.Add(p);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

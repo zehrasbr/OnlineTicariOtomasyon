@@ -240,6 +240,7 @@
     <Content Include="Views\Department\DepartmanDetay.cshtml" />
     <Content Include="Views\Department\DepartmanPersonelSatis.cshtml" />
     <Content Include="Views\Current\Index.cshtml" />
+    <Content Include="Views\Current\YeniCari.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
