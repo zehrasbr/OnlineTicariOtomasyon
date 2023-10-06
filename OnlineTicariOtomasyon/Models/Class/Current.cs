@@ -16,7 +16,7 @@ namespace OnlineTicariOtomasyon.Models.Class
         public string CurrentName { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
-        [Required(ErrorMessage ="Bu alanı boş geçemezsiniz!")]
+        [Required(ErrorMessage ="Bu alanı boş geçemezsiniz! ")]
         public string CurrentSurname { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(13)]
