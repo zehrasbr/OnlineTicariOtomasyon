@@ -13,10 +13,12 @@
         @Html.LabelFor(x => x.CurrentName)
         <p></p>
         @Html.TextBoxFor(x => x.CurrentName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CurrentName, "", new { @style = "color:red" })
         <p></p>
         @Html.LabelFor(x => x.CurrentSurname)
         <p></p>
         @Html.TextBoxFor(x => x.CurrentSurname, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CurrentSurname, "", new { @style = "color:red" })
         <p></p>
         @Html.LabelFor(x => x.CurrentCity)
         <p></p>
