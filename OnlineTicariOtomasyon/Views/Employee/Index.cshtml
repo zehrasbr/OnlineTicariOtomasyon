@@ -1,0 +1,34 @@
+﻿@using OnlineTicariOtomasyon.Models.Class
+@model List<Employee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover" style="margin-top:20px">
+    <tr>
+        <th>ID</th>
+        <th>Personel Adı</th>
+        <th>Soyad</th>
+        <th>Görsel</th>
+        <th>Departman</th>
+        <th>Güncelle</th>
+        <th>Satışlar</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.EmployeeID</td>
+            <td>@item.EmployeeName</td>
+            <td>@item.EmployeeSurname</td>
+            <td>@item.EmployeeName</td>
+            <td>@item.Department.DepartmentName</td>
+            <td><a href="/Employee/PersonelGetir/@item.EmployeeID" class="btn btn-outline-warning">Güncelle</a></td>
+            <td><a href="/Employee/PersonelDetay/@item.EmployeeID" class="btn btn-outline-info">Detaylar</a></td>
+
+        </tr>
+    }
+</table>
+<a href="/Employee/PersonelEkle" class="btn btn-outline-success">Personel Ekle</a>
