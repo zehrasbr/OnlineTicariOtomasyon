@@ -55,5 +55,12 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult MusteriSatis(int id)
+        {
+            var degerler = c.SalesStatuses.Where(x=>x.Currentid == id).ToList();
+            var cr = c.Currents.Where(x => x.CurrentID == id).Select(y => y.CurrentName + " " + y.CurrentSurname).FirstOrDefault();
+            ViewBag.cari = cr;
+            return View(degerler);
+        }
     }
 }
