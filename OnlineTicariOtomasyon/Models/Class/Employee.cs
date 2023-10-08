@@ -23,5 +23,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public ICollection<SalesStatus> SalesStatuses { get; set; }
         public int Departmanid { get; set; }
         public virtual Department Department { get; set; }
+        public bool Status { get; set; }
     }
 }

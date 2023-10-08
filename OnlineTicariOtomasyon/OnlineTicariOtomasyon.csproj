@@ -246,6 +246,7 @@
     <Content Include="Views\Current\MusteriSatis.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\PersonelEkle.cshtml" />
+    <Content Include="Views\Employee\PersonelGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

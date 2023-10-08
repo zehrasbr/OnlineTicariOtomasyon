@@ -1,0 +1,30 @@
+﻿@model OnlineTicariOtomasyon.Models.Class.Employee
+@{
+    ViewBag.Title = "PersonelGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+@using (Html.BeginForm("PersonelGuncelle", "Employee", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.HiddenFor(x => x.EmployeeName)
+        @Html.LabelFor(x => x.EmployeeName)
+        <p></p>
+        @Html.TextBoxFor(x => x.EmployeeName, new { @class = "form-control" })
+        <p></p>
+        @Html.LabelFor(x => x.EmployeeSurname)
+        <p></p>
+        @Html.TextBoxFor(x => x.EmployeeSurname, new { @class = "form-control" })
+        <p></p>
+        @Html.LabelFor(x => x.EmployeeImage)
+        <p></p>
+        @Html.TextBoxFor(x => x.EmployeeImage, new { @class = "form-control" })
+        <p></p>
+        @Html.LabelFor(x => x.Department)
+        <p></p>
+        @Html.DropDownListFor(x => x.Departmanid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
+        <p></p>
+        <button class="btn btn-outline-success">Güncelle</button>
+        <a href="/Employee/Index/" class="btn btn-outline-dark">Geri</a>
+    </div>
+}

@@ -11,9 +11,10 @@
         <th>Personel Adı</th>
         <th>Soyad</th>
         <th>Görsel</th>
-        @*<th>Departman</th>*@
+        <th>Departman</th>
         <th>Güncelle</th>
         <th>Satışlar</th>
+        <th>Durumu</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -23,10 +24,10 @@
             <td>@item.EmployeeName</td>
             <td>@item.EmployeeSurname</td>
             <td>@item.EmployeeName</td>
-            @*<td>@item.Department.DepartmentName</td>*@
+            <td>@item.Department.DepartmentName</td>
             <td><a href="/Employee/PersonelGetir/@item.EmployeeID" class="btn btn-outline-warning">Güncelle</a></td>
-            <td><a href="/Employee/PersonelDetay/@item.EmployeeID" class="btn btn-outline-info">Detaylar</a></td>
-
+            <td><a href="/Department/DepartmanPersonelSatis/@item.EmployeeID" class="btn btn-outline-info">Detaylar</a></td>
+            <td><a href="/Employee/PersonelSil/@item.EmployeeID" class="btn btn-outline-danger">Pasif Yap</a></td>
         </tr>
     }
 </table>
