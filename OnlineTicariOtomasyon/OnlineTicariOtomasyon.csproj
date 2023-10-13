@@ -250,6 +250,7 @@
     <Content Include="Views\Employee\PersonelGetir.cshtml" />
     <Content Include="Views\Satis\Index.cshtml" />
     <Content Include="Views\Satis\YeniSatis.cshtml" />
+    <Content Include="Views\Satis\SatisGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

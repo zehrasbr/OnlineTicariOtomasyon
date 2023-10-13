@@ -1,0 +1,44 @@
+﻿@model OnlineTicariOtomasyon.Models.Class.SalesStatus
+@{
+    ViewBag.Title = "SatisGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Satış İşlemi Güncelleme Sayfası</h2>
+<br />
+@using (Html.BeginForm("SatisGuncelle", "Satis", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.SalesStatusID)
+    @Html.LabelFor(x => x.Product)
+    <p></p>
+    @Html.DropDownListFor(x => x.Productid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
+    <p></p>
+    @Html.Label("Cari")
+    <p></p>
+    @Html.DropDownListFor(x => x.Currentid, (List<SelectListItem>)ViewBag.dgr2, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Employee)
+    <p></p>
+    @Html.DropDownListFor(x => x.Employeeid, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Piece)
+    <p></p>
+    @Html.TextBoxFor(x => x.Piece, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Price)
+    <p></p>
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.TotalPrice)
+    <p></p>
+    @Html.TextBoxFor(x => x.TotalPrice, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Date)
+    <p></p>
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <p></p>
+    <button class="btn btn-outline-dark">Güncelle</button>
+    <a href="/Satis/Index/" class="btn btn-outline-dark">Geri</a>
+    <p></p>
+}
