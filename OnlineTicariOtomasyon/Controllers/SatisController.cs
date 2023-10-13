@@ -75,5 +75,18 @@ namespace OnlineTicariOtomasyon.Controllers
             var deger = c.SalesStatuses.Find(id);
             return View("SatisGetir", deger);
         }
+        public ActionResult SatisGuncelle(SalesStatus p)
+        {
+            var deger = c.SalesStatuses.Find(p.SalesStatusID);
+            deger.Currentid = p.Currentid;
+            deger.Piece = p.Piece;
+            deger.Price = p.Price;
+            deger.Employeeid = p.Employeeid;
+            deger.Date = p.Date;
+            deger.TotalPrice = p.TotalPrice;
+            deger.Productid = p.Productid;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
