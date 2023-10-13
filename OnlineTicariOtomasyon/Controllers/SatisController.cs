@@ -88,5 +88,10 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult SatisDetay(int id)
+        {
+            var degerler = c.SalesStatuses.Where(x => x.SalesStatusID == id).ToList();
+            return View(degerler);
+        }
     }
 }

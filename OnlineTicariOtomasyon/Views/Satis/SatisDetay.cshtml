@@ -1,0 +1,40 @@
+﻿@using OnlineTicariOtomasyon.Models.Class
+@model List<SalesStatus>
+@{
+    ViewBag.Title = "SatisDetay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h3>Satış Detayı</h3>
+<br />
+<table class="table table-hover">
+    
+        <tr>
+            <th>Satış ID</th>
+            <th>Ürün</th>
+            <th>Cari</th>
+            <th>Personel</th>
+            <th>Fiyat</th>
+            <th>Adet</th>
+            <th>Toplam</th>
+            <th>Tarih</th>
+        </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SalesStatusID</td>
+            <td>@item.Product.ProductName</td>
+            <td>@item.Current.CurrentName @item.Current.CurrentSurname</td>
+            <td>@item.Employee.EmployeeName @item.Employee.EmployeeSurname</td>
+            <td>@item.Price</td>
+            <td>@item.Piece</td>
+            <td>@item.TotalPrice</td>
+            <td>@item.Date</td>
+
+        </tr>
+    }
+</table>
+<br />
+<a href="/Satis/Index/" class="btn btn-outline-dark">Geri</a>
+<button class="btn btn-outline-secondary">Yazdır</button>
+
