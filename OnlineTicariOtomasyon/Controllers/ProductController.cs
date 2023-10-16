@@ -67,5 +67,10 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult UrunLisetsi()
+        {
+            var degerler = c.Products.ToList();
+            return View(degerler);
+        }
     }
 }
