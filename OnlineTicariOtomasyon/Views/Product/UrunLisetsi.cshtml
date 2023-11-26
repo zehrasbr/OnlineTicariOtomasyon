@@ -51,9 +51,6 @@
                 <th>Satış Fiyat</th>
 
                 <th>Durum</th>
-
-                @*<th>Kategori</th>*@
-
             </tr>
 
         </thead>
@@ -63,7 +60,6 @@
             @foreach (var x in Model)
 
             {
-
                 <tr>
 
                     <td>@x.ProductID</td>
@@ -79,17 +75,10 @@
                     <td>@x.SalePrice</td>
 
                     <td>@x.Status</td>
-
-                    @*<td>@x.Category.CategoryName</td>*@
-
                 </tr>
 
             }
-
-
-
         </tbody>
-
     </table>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
