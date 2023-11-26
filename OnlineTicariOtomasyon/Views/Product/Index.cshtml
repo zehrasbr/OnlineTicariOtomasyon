@@ -13,7 +13,7 @@
         <th>Marka</th>
         <th>Stok</th>
         <th>Alış Fiyat</th>
-        <th>satış Fiyat</th>
+        <th>Satış Fiyat</th>
         <th>Görsel</th>
         <th>Durumu</th>
         <th>Güncelle</th>
@@ -27,7 +27,6 @@
                     <td>@item.ProductStock</td>
                     <td>@item.PurchasePrice</td>
                     <td>@item.SalePrice</td>
-                    @*<td>@item.Category.CategoryName</td>*@
                     <td>@item.ProductImage</td>
                     <td><a href="/Product/UrunSil/@item.ProductID" class="btn btn-outline-danger">Pasif Yap</a></td>
                     <td><a href="/Product/UrunGetir/@item.ProductID" class="btn btn-outline-warning">Güncelle</a></td>
