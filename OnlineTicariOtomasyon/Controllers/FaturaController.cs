@@ -26,5 +26,6 @@ namespace OnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+
     }
 }
