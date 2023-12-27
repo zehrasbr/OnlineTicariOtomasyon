@@ -1,0 +1,35 @@
+﻿@model OnlineTicariOtomasyon.Models.Class.FaturaKalem
+@{
+    ViewBag.Title = "YeniKalem";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Yeni Kalem Girişi</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Description)
+    <p></p>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Amount)
+    <p></p>
+    @Html.TextBoxFor(x => x.Amount, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.UnitPrice)
+    <p></p>
+    @Html.TextBoxFor(x => x.UnitPrice, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.TotalPrice)
+    <p></p>
+    @Html.TextBoxFor(x => x.TotalPrice, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Billid)
+    <p></p>
+    @Html.TextBoxFor(x => x.Billid, new { @class = "form-control" })
+    <p></p>
+    <a href="/Fatura/Index/" class="btn btn-outline-dark">Geri</a>
+    <button class="btn btn-outline-dark">Oluştur</button>
+    <p></p>
+</form>
+
