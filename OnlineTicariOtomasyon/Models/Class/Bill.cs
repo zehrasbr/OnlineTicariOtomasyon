@@ -21,13 +21,17 @@ namespace OnlineTicariOtomasyon.Models.Class
         [Column(TypeName = "Varchar")]
         [StringLength(60)]
         public string TaxAdministration { get; set; }
-        public DateTime Clock { get; set; }
+        [Column(TypeName = "Char")]
+        [StringLength(5)]
+        public string Clock { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string Deliverer { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
         public string DeliveryArea { get; set; }
+
+        public decimal Total { get; set; }
         public ICollection<FaturaKalem> FaturaKalems { get; set; }
     }
 }
