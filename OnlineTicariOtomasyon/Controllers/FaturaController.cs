@@ -14,5 +14,17 @@ namespace OnlineTicariOtomasyon.Controllers
             var liste = c.Bills.ToList();
             return View(liste);
         }
+        [HttpGet]
+        public ActionResult FaturaEkle()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult FaturaEkle(Bill bill)
+        {
+            c.Bills.Add(bill);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

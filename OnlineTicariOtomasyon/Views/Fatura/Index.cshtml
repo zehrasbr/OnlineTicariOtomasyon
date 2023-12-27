@@ -13,9 +13,9 @@
         <th>Vergi Dairesi</th>
         <th>Tarih</th>
         <th>Saat</th>
-        <th>Toplam</th>
         <th>Teslim Eden</th>
         <th>Teslim Alan</th>
+        <th>Toplam</th>
         <th>Güncelle</th>
         <th>Detaylar</th>
 
@@ -25,18 +25,18 @@
 
         <tr>
             <td>@item.BillID</td>
-            <td>@item.BillSerialNo</td>    
+            <td>@item.BillSerialNo</td>
             <td>@item.BillSequenceNo</td>
             <td>@item.TaxAdministration</td>
             <td>@item.Date</td>
             <td>@item.Clock</td>
-            <td>100</td>
             <td>@item.Deliverer</td>
             <td>@item.DeliveryArea</td>
+            <td>@item.Total</td>
             <td><a href="/Fatura/DepartmanGetir/@item.BillID" class="btn btn-outline-warning">Güncelle</a></td>
             <td><a href="/Fatura/DepartmanDetay/@item.BillID" class="btn btn-outline-info">Detaylar</a></td>
 
         </tr>
     }
 </table>
-<a href="/Fatura/DepartmanEkle" class="btn btn-outline-success">Departman Ekle</a>
+<a href="/Fatura/FaturaEkle" class="btn btn-outline-success">Yeni Fatura Girişi</a>
