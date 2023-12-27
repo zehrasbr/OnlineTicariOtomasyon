@@ -1,0 +1,36 @@
+﻿@using OnlineTicariOtomasyon.Models.Class
+@model List<FaturaKalem>
+@{
+    ViewBag.Title = "FaturaDetay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h3>Fatura Kalemleri Sayfası</h3>
+<br />
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active"></li>
+</ol>
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Açıklama</th>
+        <th>Miktar</th>
+        <th>Birim Fiyat</th>
+        <th>Tutar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.Billid</td>
+            <td>@item.Description</td>
+            <td>@item.Amount</td>
+            <td>@item.UnitPrice</td>
+            <td>@item.TotalPrice</td>
+        </tr>
+
+    }
+</table>
+<a href="/Fatura/Index/" class="btn btn-outline-dark">Yeni Kalem Girişi</a>
+<a href="/Fatura/Index/" class="btn btn-outline-dark">Geri</a>
