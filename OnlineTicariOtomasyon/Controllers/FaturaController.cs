@@ -31,5 +31,18 @@ namespace OnlineTicariOtomasyon.Controllers
             var fatura = c.Bills.Find(id);
             return View("FaturaGetir", fatura);
         }
+        public ActionResult FaturaGuncelle(Bill f)
+        {
+            var fatura = c.Bills.Find(f.BillID);
+            fatura.BillSerialNo = f.BillSerialNo;
+            fatura.BillSequenceNo = f.BillSequenceNo;
+            fatura.TaxAdministration = f.TaxAdministration;
+            fatura.Clock = f.Clock;
+            fatura.Date = f.Date;
+            fatura.Deliverer = f.Deliverer;
+            fatura.DeliveryArea   = f.DeliveryArea;
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
