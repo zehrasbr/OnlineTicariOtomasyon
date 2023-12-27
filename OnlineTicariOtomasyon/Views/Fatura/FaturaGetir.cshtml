@@ -1,0 +1,44 @@
+﻿@model OnlineTicariOtomasyon.Models.Class.Bill
+@{
+    ViewBag.Title = "FaturaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Fatura Güncelleme Sayfası</h2>
+<br />
+@using (Html.BeginForm("FaturaGuncelle", "Fatura", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.BillID)
+    @Html.LabelFor(x => x.BillSerialNo)
+    <p></p>
+    @Html.TextBoxFor(x => x.BillSerialNo, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.BillSequenceNo)
+    <p></p>
+    @Html.TextBoxFor(x => x.BillSequenceNo, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.TaxAdministration)
+    <p></p>
+    @Html.TextBoxFor(x => x.TaxAdministration, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Date)
+    <p></p>
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Clock)
+    <p></p>
+    @Html.TextBoxFor(x => x.Clock, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.Deliverer)
+    <p></p>
+    @Html.TextBoxFor(x => x.Deliverer, new { @class = "form-control" })
+    <p></p>
+    @Html.LabelFor(x => x.DeliveryArea)
+    <p></p>
+    @Html.TextBoxFor(x => x.DeliveryArea, new { @class = "form-control" })
+    <p></p>
+    <button class="btn btn-outline-dark">Güncelle</button>
+    <a href="/Fatura/Index/" class="btn btn-outline-dark">Geri</a>
+    <p></p>
+}
