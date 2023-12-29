@@ -35,12 +35,15 @@ namespace OnlineTicariOtomasyon.Controllers
             var deger8 = (from x in c.Products orderby x.SalePrice descending select x.ProductName).FirstOrDefault();
             ViewBag.d8 = deger8;
                                        
-            var deger9 = c.Currents.Count().ToString();
+            var deger9 = (from x in c.Products orderby x.SalePrice ascending select x.ProductName).FirstOrDefault();
             ViewBag.d9 = deger9;
-            var deger10 = c.Currents.Count().ToString();
+
+            var deger10 = c.Products.Count(x=> x.ProductName == "Buzdolabı").ToString();
             ViewBag.d10 = deger10;
-            var deger11 = c.Currents.Count().ToString();
+
+            var deger11 = c.Products.Count(x=>x.ProductName == "Laptop").ToString();
             ViewBag.d11 = deger11;
+
             var deger12 = c.Currents.Count().ToString();
             ViewBag.d12 = deger12;
             var deger13 = c.Currents.Count().ToString();
