@@ -44,15 +44,20 @@ namespace OnlineTicariOtomasyon.Controllers
             var deger11 = c.Products.Count(x=>x.ProductName == "Laptop").ToString();
             ViewBag.d11 = deger11;
 
-            var deger12 = c.Currents.Count().ToString();
+            var deger12 = c.Products.GroupBy(x=>x.ProductBrand).OrderByDescending(z=>z.Count()).Select(y=>y.Key).FirstOrDefault();
             ViewBag.d12 = deger12;
+
             var deger13 = c.Currents.Count().ToString();
             ViewBag.d13 = deger13;
-            var deger14 = c.Currents.Count().ToString();
+
+            var deger14 = c.SalesStatuses.Sum(x=>x.TotalPrice).ToString();
             ViewBag.d14 = deger14;
-            var deger15 = c.Currents.Count().ToString();
+
+            DateTime bugun = DateTime.Today;
+            var deger15 = c.SalesStatuses.Count(x=>x.Date == bugun).ToString();
             ViewBag.d15 = deger15;
-            var deger16 = c.Currents.Count().ToString();
+
+            var deger16 = c.SalesStatuses.Where(x=>x.Date==bugun).Sum(y=>y.TotalPrice).ToString(); 
             ViewBag.d16 = deger16;
             return View();
         }
