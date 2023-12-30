@@ -45,7 +45,7 @@
                     @foreach (var item in Model)
                     {
                         <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
-                            <a href="images/img_1.jpg" class="d-block photo-item" data-fancybox="gallery">
+                            <a href="@item.ProductImage" class="d-block photo-item" data-fancybox="gallery">
                                 <img src="@item.ProductImage" />
                                 <div class="photo-text-more">
                                     <span class="icon icon-search"></span>
