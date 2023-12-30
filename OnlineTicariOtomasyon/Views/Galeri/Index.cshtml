@@ -1,4 +1,5 @@
-﻿
+﻿@using OnlineTicariOtomasyon.Models.Class
+@model List<Product>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -36,31 +37,24 @@
     <br />
 
     <div class="site-wrap">
-     <main class="main-content">
+        <main class="main-content">
+          
             <div class="container-fluid photos">
+               
                 <div class="row align-items-stretch">
-
-                    <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
-                        <a href="images/img_1.jpg" class="d-block photo-item" data-fancybox="gallery">
-                            <img src="~/thumber/images/img_1.jpg" />
-                            <div class="photo-text-more">
-                                <span class="icon icon-search"></span>
-                            </div>
-                        </a>
-                    </div>
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/img_1.jpg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="@item.ProductImage" />
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
                                 </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-12 text-center py-5">
-                        <p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
+                            </a>
+                        </div>  
+                    }
+                    </div>   
                 </div>
-            </div>
         </main>
 
     </div> <!-- .site-wrap -->
