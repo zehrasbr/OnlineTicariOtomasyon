@@ -137,6 +137,7 @@
     <Compile Include="Controllers\istatistikController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SatisController.cs" />
+    <Compile Include="Controllers\UrunDetayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2791,6 +2792,7 @@
     <Content Include="thumber\scss\_site-base.scss" />
     <Content Include="thumber\scss\_site-blocks.scss" />
     <Content Include="thumber\scss\_site-navbar.scss" />
+    <Content Include="Views\UrunDetay\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
