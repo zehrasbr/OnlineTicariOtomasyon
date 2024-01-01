@@ -17,6 +17,7 @@ namespace OnlineTicariOtomasyon.Models.Class
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<FaturaKalem> FaturaKalems { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Detay> Detays { get; set; }
         public DbSet<SalesStatus> SalesStatuses { get; set; }
     }
 }

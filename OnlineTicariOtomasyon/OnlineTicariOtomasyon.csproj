@@ -156,6 +156,7 @@
     <Compile Include="Models\Class\Context.cs" />
     <Compile Include="Models\Class\Current.cs" />
     <Compile Include="Models\Class\Department.cs" />
+    <Compile Include="Models\Class\Detay.cs" />
     <Compile Include="Models\Class\Employee.cs" />
     <Compile Include="Models\Class\Expense.cs" />
     <Compile Include="Models\Class\FaturaKalem.cs" />
