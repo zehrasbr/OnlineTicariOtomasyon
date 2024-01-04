@@ -11,6 +11,7 @@ namespace OnlineTicariOtomasyon.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
+
             Class1 cs = new Class1();
             //var degerler = c.Products.Where(x=>x.ProductID == 1).ToList();
             cs.Deger1 = c.Products.Where(x=>x.ProductID == 1).ToList();
