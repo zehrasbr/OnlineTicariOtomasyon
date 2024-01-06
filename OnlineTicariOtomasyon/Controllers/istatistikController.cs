@@ -48,7 +48,14 @@ namespace OnlineTicariOtomasyon.Controllers
         }
         public ActionResult KolayTablolar()
         {
-            return View();
+            var sorgu = from x in c.Currents
+                        group x by x.CurrentCity into g
+                        select new SinifGrup
+                        {
+                            Sehir = g.Key,
+                            Sayi = g.Count()
+                        };
+            return View(sorgu.ToList());
         }
     }
 }

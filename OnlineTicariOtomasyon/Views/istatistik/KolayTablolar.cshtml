@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<OnlineTicariOtomasyon.Models.Class.SinifGrup>
 @{
     ViewBag.Title = "KolayTablolar";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -180,16 +180,19 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach(var item in Model)
+                                             {
                                             <tr>
                                                 <td>1.</td>
-                                                <td>Update software</td>
+                                                <td>@item.Sehir</td>
                                                 <td>
                                                     <div class="progress progress-xs">
                                                         <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                                                     </div>
                                                 </td>
-                                                <td><span class="badge bg-danger">55%</span></td>
-                                            </tr>
+                                                <td><span class="badge bg-danger">@item.Sayi</span></td>
+                                            </tr> 
+                                            }
                                         </tbody>
                                     </table>
                                 </div>

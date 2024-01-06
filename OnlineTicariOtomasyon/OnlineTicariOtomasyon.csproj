@@ -163,6 +163,7 @@
     <Compile Include="Models\Class\FaturaKalem.cs" />
     <Compile Include="Models\Class\Product.cs" />
     <Compile Include="Models\Class\SalesStatus.cs" />
+    <Compile Include="Models\Class\SinifGrup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
