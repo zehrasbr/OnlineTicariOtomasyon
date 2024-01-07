@@ -180,10 +180,11 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach(var item in Model)
-                                             {
+                                            @{ int sirano = 0;}
+                                            @foreach (var item in Model)
+                                            {
                                             <tr>
-                                                <td>1.</td>
+                                                <td>@{sirano++;} @sirano</td>
                                                 <td>@item.Sehir</td>
                                                 <td>
                                                     <div class="progress progress-xs">
