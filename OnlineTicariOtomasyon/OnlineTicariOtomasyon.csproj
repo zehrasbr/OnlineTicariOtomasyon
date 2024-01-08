@@ -2797,6 +2797,7 @@
     <Content Include="thumber\scss\_site-navbar.scss" />
     <Content Include="Views\UrunDetay\Index.cshtml" />
     <Content Include="Views\istatistik\KolayTablolar.cshtml" />
+    <Content Include="Views\istatistik\Partial1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

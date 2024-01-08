@@ -57,5 +57,9 @@ namespace OnlineTicariOtomasyon.Controllers
                         };
             return View(sorgu.ToList());
         }
+        public PartialViewResult Partial1()
+        {
+            return PartialView();
+        }
     }
 }
