@@ -1,1 +1,62 @@
-﻿
+﻿@model IEnumerable<OnlineTicariOtomasyon.Models.Class.SinifGrup2>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Departman Personel Sayıları</h3>
+    </div>
+    <div class="card-body p-0">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Departman</th>
+                    <th>Progress Bar</th>
+                    <th style="width: 40px">Sayı</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @{ int sirano = 0;}
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@{sirano++;} @sirano</td>
+                            <td>@item.Departman</td>
+                            <td>
+                                @if (item.Sayi == 1)
+                                {
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                    </div>
+                                }
+                                @if (item.Sayi == 2)
+                                {
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    </div>
+                                }
+                                @if (item.Sayi == 3)
+                                {
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-success" style="width: 70%"></div>
+                                    </div>
+                                }
+                            </td>
+                            <td>
+                                @if (item.Sayi == 1)
+                                {
+                                    <span class="badge bg-danger">@item.Sayi</span>
+                                }
+                                @if (item.Sayi == 2)
+                                {
+                                    <span class="badge bg-warning">@item.Sayi</span>
+                                }
+                                @if (item.Sayi == 3)
+                                {
+                                    <span class="badge bg-success">@item.Sayi</span>
+                                }
+                            </td>
+                        </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
