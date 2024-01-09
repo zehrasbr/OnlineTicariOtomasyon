@@ -165,6 +165,7 @@
     <Compile Include="Models\Class\SalesStatus.cs" />
     <Compile Include="Models\Class\SinifGrup.cs" />
     <Compile Include="Models\Class\SinifGrup2.cs" />
+    <Compile Include="Models\Class\SinifGrup3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2801,6 +2802,7 @@
     <Content Include="Views\istatistik\Partial1.cshtml" />
     <Content Include="Views\istatistik\Partial2.cshtml" />
     <Content Include="Views\istatistik\Partial3.cshtml" />
+    <Content Include="Views\istatistik\Partial4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
