@@ -72,6 +72,11 @@ namespace OnlineTicariOtomasyon.Controllers
         {
             var sorgu = c.Currents.ToList();
             return PartialView(sorgu);
+        }  
+        public PartialViewResult Partial3()
+        {
+            var sorgu = c.Products.ToList();
+            return PartialView(sorgu);
         }
     }
 }
