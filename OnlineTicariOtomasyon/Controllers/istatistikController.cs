@@ -60,7 +60,7 @@ namespace OnlineTicariOtomasyon.Controllers
         public PartialViewResult Partial1()
         {
             var sorgu2 = from x in c.Employees
-                         group x by x.Departmanid into g
+                         group x by x.Department.DepartmentName into g
                          select new SinifGrup2
                          {
                              Departman = g.Key,
