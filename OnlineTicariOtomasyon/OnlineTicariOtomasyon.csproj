@@ -2803,6 +2803,7 @@
     <Content Include="Views\istatistik\Partial2.cshtml" />
     <Content Include="Views\istatistik\Partial3.cshtml" />
     <Content Include="Views\istatistik\Partial4.cshtml" />
+    <Content Include="Views\Employee\PersonelListe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
