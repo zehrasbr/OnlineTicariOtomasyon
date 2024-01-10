@@ -35,7 +35,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Contacts</h1>
+                            <h1>Personeller</h1>
                         </div>
  
                     </div>
@@ -54,7 +54,7 @@
                                 <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
                                     <div class="card bg-light">
                                         <div class="card-header text-muted border-bottom-0">
-                                            Digital Strategist
+                                            @item.Department.DepartmentName
                                         </div>
                                         <div class="card-body pt-0">
                                             <div class="row">
@@ -67,25 +67,23 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col-5 text-center">
-                                                    <img src="../../dist/img/user1-128x128.jpg" alt="" class="img-circle img-fluid">
+                                                    <img src="@item.EmployeeImage" alt="" class="img-fluid img-fluid">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-footer">
                                             <div class="text-right">
-                                                <a href="#" class="btn btn-sm bg-teal">
-                                                    <i class="fas fa-comments"></i>
+                                                <a href="/Employee/PersonelGetir/@item.EmployeeID" class="btn btn-outline-info">
+                                                    <i class="fas fa-info"></i>
                                                 </a>
-                                                <a href="#" class="btn btn-sm btn-primary">
-                                                    <i class="fas fa-user"></i> View Profile
+                                                <a href="/Department/DepartmanPersonelSatis/@item.EmployeeID" class="btn btn-outline-dark">
+                                                    <i class="fas fa-user"></i> Satış Geçmişi
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             }
-
-
                         </div>
                     </div>
                     <!-- /.card-body -->
