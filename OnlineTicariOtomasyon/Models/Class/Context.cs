@@ -19,5 +19,6 @@ namespace OnlineTicariOtomasyon.Models.Class
         public DbSet<Product> Products { get; set; }
         public DbSet<Detay> Detays { get; set; }
         public DbSet<SalesStatus> SalesStatuses { get; set; }
+        public DbSet<Yapilacak> Yapilacaks { get; set; }
     }
 }

@@ -166,6 +166,7 @@
     <Compile Include="Models\Class\SinifGrup.cs" />
     <Compile Include="Models\Class\SinifGrup2.cs" />
     <Compile Include="Models\Class\SinifGrup3.cs" />
+    <Compile Include="Models\Class\Yapilacak.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
