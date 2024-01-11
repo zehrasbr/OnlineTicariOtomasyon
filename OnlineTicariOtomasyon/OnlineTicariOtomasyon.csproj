@@ -138,6 +138,7 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SatisController.cs" />
     <Compile Include="Controllers\UrunDetayController.cs" />
+    <Compile Include="Controllers\YapilacakController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2805,6 +2806,7 @@
     <Content Include="Views\istatistik\Partial3.cshtml" />
     <Content Include="Views\istatistik\Partial4.cshtml" />
     <Content Include="Views\Employee\PersonelListe.cshtml" />
+    <Content Include="Views\Yapilacak\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
