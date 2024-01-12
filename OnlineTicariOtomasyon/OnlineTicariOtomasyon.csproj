@@ -135,6 +135,7 @@
     <Compile Include="Controllers\GaleriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\istatistikController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SatisController.cs" />
     <Compile Include="Controllers\UrunDetayController.cs" />
@@ -2632,6 +2633,15 @@
     <Content Include="web2\resimler\book5.jpg" />
     <Content Include="web2\resimler\img1.jpg" />
     <Content Include="web2\w3layouts-License.txt" />
+    <Content Include="weblogin\css\font-awesome.css" />
+    <Content Include="weblogin\css\popup-box.css" />
+    <Content Include="weblogin\css\style.css" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.svg" />
+    <Content Include="weblogin\images\bg.jpg" />
+    <Content Include="weblogin\index.html" />
+    <Content Include="weblogin\js\jquery-2.1.4.min.js" />
+    <Content Include="weblogin\js\jquery.magnific-popup.js" />
+    <Content Include="weblogin\w3layouts-License.txt" />
     <Content Include="Web\401.html" />
     <Content Include="Web\404.html" />
     <Content Include="Web\500.html" />
@@ -2807,6 +2817,12 @@
     <Content Include="Views\istatistik\Partial4.cshtml" />
     <Content Include="Views\Employee\PersonelListe.cshtml" />
     <Content Include="Views\Yapilacak\Index.cshtml" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.eot" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.woff" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="weblogin\fonts\FontAwesome.otf" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
