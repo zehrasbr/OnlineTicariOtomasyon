@@ -17,9 +17,10 @@ namespace OnlineTicariOtomasyon.Controllers
             ViewBag.d2 = deger2;
             var deger3 = c.Categories.Count().ToString();
             ViewBag.d3 = deger3;
-            //var deger4 = c.Currents.Distinct().Count(x=>x.).ToString();
-           // ViewBag.d4 = deger4;
-            return View();
+            var deger4 = (from x in c.Currents select x.CurrentCity).Distinct().Count().ToString();
+            ViewBag.d4 = deger4;
+            var yapilacaklar = c.Yapilacaks.ToList();
+            return View(yapilacaklar);
         }
     }
 }
