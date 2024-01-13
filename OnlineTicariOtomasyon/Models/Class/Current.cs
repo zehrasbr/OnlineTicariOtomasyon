@@ -23,7 +23,10 @@ namespace OnlineTicariOtomasyon.Models.Class
         public string CurrentCity { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(50)]
-        public string CurrentMail { get; set; }
+        public string CurrentMail { get; set; }  
+        [Column(TypeName = "Varchar")]
+        [StringLength(20)]
+        public string CurrentPassword { get; set; }
         public bool Status { get; set; }
         public ICollection<SalesStatus> SalesStatuses { get; set; }
     }
