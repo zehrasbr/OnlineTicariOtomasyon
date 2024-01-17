@@ -26,10 +26,10 @@
             <td>@item.Product.ProductName</td>
             <td>@item.Current.CurrentName @item.Current.CurrentSurname</td>
             <td>@item.Employee.EmployeeName @item.Employee.EmployeeSurname</td>
-            <td>@item.Price</td>
+            <td>@item.Price ₺</td>
             <td>@item.Piece</td>
-            <td>@item.TotalPrice</td>
-            <td>@item.Date</td>
+            <td>@item.TotalPrice ₺</td>
+            <td>@Convert.ToDateTime(item.Date).ToString("dd/MM/yyyy")</td>
 
         </tr>
     }

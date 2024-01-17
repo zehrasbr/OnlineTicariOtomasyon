@@ -28,7 +28,7 @@
             <td>@item.Price ₺</td>
             <td>@item.Piece</td>
             <td>@item.TotalPrice ₺</td>
-            <td>@item.Date</td>
+            <td>@Convert.ToDateTime(item.Date).ToString("dd/MM/yyyy")</td>
             <td><a href="#" class="btn btn-outline-secondary">Yazdır</a></td>
         </tr>
     }

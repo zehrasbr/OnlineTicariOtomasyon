@@ -7,9 +7,7 @@
 
 <table class="table table-hover" style="margin-top:20px">
     <tr>
-        <th>ID</th>
-        <th>Seri No</th>
-        <th>Sıra No</th>
+        <th>Seri Sıra No</th>
         <th>Vergi Dairesi</th>
         <th>Tarih</th>
         <th>Saat</th>
@@ -24,15 +22,13 @@
     {
 
         <tr>
-            <td>@item.BillID</td>
-            <td>@item.BillSerialNo</td>
-            <td>@item.BillSequenceNo</td>
+            <td>@item.BillSerialNo @item.BillSequenceNo</td>
             <td>@item.TaxAdministration</td>
-            <td>@item.Date</td>
+            <td>@Convert.ToDateTime(item.Date).ToString("dd/MM/yyyy")</td>
             <td>@item.Clock</td>
             <td>@item.Deliverer</td>
             <td>@item.DeliveryArea</td>
-            <td>@item.Total</td>
+            <td>@item.Total ₺</td>
             <td><a href="/Fatura/FaturaGetir/@item.BillID" class="btn btn-outline-warning">Güncelle</a></td>
             <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-info">Detaylar</a></td>
 
