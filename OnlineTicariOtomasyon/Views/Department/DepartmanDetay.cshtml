@@ -13,20 +13,14 @@
 </ol>
 <table class="table table-hover">
     <tr>
-        <th>Personel ID</th>
-        <th>Ad</th>
-        <th>Soyad</th>
-        <th>Görsel</th>
+        <th>Personel</th>
         <th>Satışlar</th>
     </tr>
     @foreach(var item in Model)
             {
 
     <tr>
-        <td>@item.EmployeeID</td>
-        <td>@item.EmployeeName</td>
-        <td>@item.EmployeeSurname</td>
-        <td>@item.EmployeeImage</td>
+        <td>@item.EmployeeName @item.EmployeeSurname</td>
         <td><a href="/Department/DepartmanPersonelSatis/@item.EmployeeID" class="btn btn-outline-secondary">Satışlar</a></td>
     </tr> 
     }
