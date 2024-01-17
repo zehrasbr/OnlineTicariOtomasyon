@@ -4,15 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using OnlineTicariOtomasyon.Models.Class;
+using PagedList;
+using PagedList.Mvc;
 
 namespace OnlineTicariOtomasyon.Controllers
 {
     public class CategoryController : Controller
     {
         Context c = new Context();
-        public ActionResult Index()
+        public ActionResult Index(int sayfa = 1)
         {
-            var degerler =  c.Categories.ToList();
+            var degerler = c.Categories.ToList().ToPagedList(sayfa,4);
             return View(degerler);
         }
         [HttpGet]
