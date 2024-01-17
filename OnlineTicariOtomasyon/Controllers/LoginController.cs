@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using System.Xml.Schema;
 
 namespace OnlineTicariOtomasyon.Controllers
 {
@@ -45,6 +46,26 @@ namespace OnlineTicariOtomasyon.Controllers
             else
             {
                 return RedirectToAction("Index","Login");
+            }
+        }
+        [HttpGet]
+        public ActionResult AdminLogin()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AdminLogin(Admin p)
+        {
+            var bilgiler = c.Admins.FirstOrDefault(x=>x.UserName == p.UserName && x.Password == p.Password);
+            if(bilgiler != null)
+            {
+                FormsAuthentication.SetAuthCookie(bilgiler.UserName,false);
+                Session["UserName"] = bilgiler.UserName.ToString();
+                return RedirectToAction("Index", "Category");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Login");
             }
         }
     }
