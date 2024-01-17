@@ -7,7 +7,7 @@
 <br />
 <h2>Sipariş Geçmişim</h2>
 <br />
-<table class="table table-hover">
+<table class="table table-bordered">
     <tr>
         <th>Ürün Adı</th>
         <th>Fiyat</th>
@@ -16,7 +16,9 @@
     @foreach(var item in Model)
             {
     <tr>
-        <td>@item.</td>
+        <td>@item.Product.ProductName</td>
+        <td>@item.Price</td>
+        <td>@Convert.ToDateTime(item.Date).ToString("dd/MM/yyyy")</td>
     </tr>
             }
 </table>
