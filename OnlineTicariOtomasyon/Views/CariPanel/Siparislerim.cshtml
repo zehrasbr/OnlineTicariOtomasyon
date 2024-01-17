@@ -1,0 +1,22 @@
+﻿@using OnlineTicariOtomasyon.Models.Class
+@model List<SalesStatus>
+@{
+    ViewBag.Title = "Siparislerim";
+    Layout = "~/Views/Shared/_CariLayout.cshtml";
+}
+<br />
+<h2>Sipariş Geçmişim</h2>
+<br />
+<table class="table table-hover">
+    <tr>
+        <th>Ürün Adı</th>
+        <th>Fiyat</th>
+        <th>Tarih</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+    <tr>
+        <td>@item.</td>
+    </tr>
+            }
+</table>
