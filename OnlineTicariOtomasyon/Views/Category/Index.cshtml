@@ -25,4 +25,5 @@
         </tr>
     }
 </table>
+@Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Index", new {sayfa }))
 <a href="/Category/KategoriEkle" class="btn btn-outline-success">Kategori Ekle</a>
