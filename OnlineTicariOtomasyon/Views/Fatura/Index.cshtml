@@ -34,8 +34,6 @@
     }
 </table>
 <a href="/Fatura/FaturaEkle" class="btn btn-outline-success">Yeni Fatura Girişi</a>
-<br />
-<br />
 <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Modal1">Popup Penceresi</button>
 
 <div class="modal" id="Modal1">
@@ -43,6 +41,24 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">Popup Diyalog Ekranı</h2> 
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Seri No</td>
+                        <td>Sıra No</td>
+                        <td>Tutar</td>
+                    </tr>
+                    @foreach(var item in Model)
+            {
+                    <tr>
+                        <td>@item.BillSerialNo</td>
+                        <td>@item.BillSequenceNo</td>
+                        <td>@item.Total</td>
+                    </tr>
+            }
+                </table>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Vazgeç</button>
             </div>
         </div>
     </div>
