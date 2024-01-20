@@ -8,14 +8,13 @@
 <table class="table table-hover" style="margin-top:20px">
     <tr>
         <th>Seri Sıra No</th>
-        <th>Vergi Dairesi</th>
         <th>Tarih</th>
         <th>Saat</th>
-        <th>Teslim Eden</th>
-        <th>Teslim Alan</th>
         <th>Toplam</th>
         <th>Güncelle</th>
         <th>Detaylar</th>
+        <th>Popup Liste</th>
+        <th>Yeni Kalem</th>
 
     </tr>
     @foreach (var item in Model)
@@ -23,14 +22,13 @@
 
         <tr>
             <td>@item.BillSerialNo @item.BillSequenceNo</td>
-            <td>@item.TaxAdministration</td>
             <td>@Convert.ToDateTime(item.Date).ToString("dd/MM/yyyy")</td>
             <td>@item.Clock</td>
-            <td>@item.Deliverer</td>
-            <td>@item.DeliveryArea</td>
             <td>@item.Total ₺</td>
             <td><a href="/Fatura/FaturaGetir/@item.BillID" class="btn btn-outline-warning">Güncelle</a></td>
             <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-info">Detaylar</a></td>
+            <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-primary">Liste</a></td>
+            <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-secondary">Kalem</a></td>
 
         </tr>
     }
