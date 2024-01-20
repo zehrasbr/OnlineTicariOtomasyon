@@ -27,10 +27,23 @@
             <td>@item.Total ₺</td>
             <td><a href="/Fatura/FaturaGetir/@item.BillID" class="btn btn-outline-warning">Güncelle</a></td>
             <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-info">Detaylar</a></td>
-            <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-primary">Liste</a></td>
-            <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-secondary">Kalem</a></td>
+            <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-primary">Popup Liste</a></td>
+            <td><a href="/Fatura/FaturaDetay/@item.BillID" class="btn btn-outline-secondary">Yeni Kalem</a></td>
 
         </tr>
     }
 </table>
 <a href="/Fatura/FaturaEkle" class="btn btn-outline-success">Yeni Fatura Girişi</a>
+<br />
+<br />
+<button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Modal1">Popup Penceresi</button>
+
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Popup Diyalog Ekranı</h2> 
+            </div>
+        </div>
+    </div>
+</div>
