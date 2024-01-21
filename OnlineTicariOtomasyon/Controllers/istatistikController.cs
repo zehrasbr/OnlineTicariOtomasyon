@@ -42,7 +42,7 @@ namespace OnlineTicariOtomasyon.Controllers
             DateTime bugun = DateTime.Today;
             var deger15 = c.SalesStatuses.Count(x=>x.Date == bugun).ToString();
             ViewBag.d15 = deger15;
-            var deger16 = c.SalesStatuses.Where(x => x.Date == bugun).Sum(y => y.TotalPrice).ToString();
+            var deger16 = c.SalesStatuses.Where(x => x.Date == bugun).Sum(y =>(decimal?)y.TotalPrice).ToString();
             ViewBag.d16 = deger16;
             return View();
         }
