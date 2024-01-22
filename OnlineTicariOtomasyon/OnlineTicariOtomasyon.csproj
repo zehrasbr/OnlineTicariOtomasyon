@@ -2874,6 +2874,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Fonts\" />
+    <Folder Include="Image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
