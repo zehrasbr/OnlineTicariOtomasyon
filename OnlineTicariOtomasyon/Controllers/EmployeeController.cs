@@ -38,7 +38,8 @@ namespace OnlineTicariOtomasyon.Controllers
                 string yol = "~/Image/" + dosyaadi + uzanti;
                 Request.Files[0].SaveAs(Server.MapPath(yol));
                 p.EmployeeImage = "/Image/" + dosyaadi + uzanti;
-            }
+              
+            }  
             c.Employees.Add(p);
             c.SaveChanges();
             return RedirectToAction("Index");
