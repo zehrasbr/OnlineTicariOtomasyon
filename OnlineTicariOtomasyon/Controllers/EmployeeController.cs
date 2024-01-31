@@ -58,6 +58,15 @@ namespace OnlineTicariOtomasyon.Controllers
         }
         public ActionResult PersonelGuncelle(Employee p)
         {
+            if (Request.Files.Count > 0)
+            {
+                string dosyaadi = Path.GetFileName(Request.Files[0].FileName);
+                string uzanti = Path.GetExtension(Request.Files[0].FileName);
+                string yol = "~/Image/" + dosyaadi + uzanti;
+                Request.Files[0].SaveAs(Server.MapPath(yol));
+                p.EmployeeImage = "/Image/" + dosyaadi + uzanti;
+
+            }
             var per = c.Employees.Find(p.EmployeeID);
             per.EmployeeName = p.EmployeeName;
             per.EmployeeSurname = p.EmployeeSurname;

@@ -23,9 +23,7 @@
             <td>@item.EmployeeID</td>
             <td>@item.EmployeeName</td>
             <td>@item.EmployeeSurname</td>
-            <td>
-                <img src="@item.EmployeeImage" style="width:100px; height:50px;" />
-            </td>
+            <td><img src="@item.EmployeeImage" style="width:100px; height:50px;" /></td>
             <td>@item.Department.DepartmentName</td>
             <td><a href="/Employee/PersonelGetir/@item.EmployeeID" class="btn btn-outline-warning">Güncelle</a></td>
             <td><a href="/Department/DepartmanPersonelSatis/@item.EmployeeID" class="btn btn-outline-info">Detaylar</a></td>

@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <br />
-@using (Html.BeginForm("PersonelGuncelle", "Employee", FormMethod.Post))
+@using (Html.BeginForm("PersonelEkle", "Employee", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div class="form-group">
         @Html.HiddenFor(x => x.EmployeeName)
