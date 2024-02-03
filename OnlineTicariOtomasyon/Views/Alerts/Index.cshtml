@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<button class="btn btn-outline-dark" id="btn1">Button 1</button>
+<button class="btn btn-outline-warning" id="btn2">Button 2</button>
+<br />
+<br />
+<script>
+    $('#btn1').click(function () {
+        swal("Hello World!");
+    });
+</script>
+<script>
+    $('#btn2').click(function () {
+        swal("Burası başlık!", "burası metin");
+    });
+</script>

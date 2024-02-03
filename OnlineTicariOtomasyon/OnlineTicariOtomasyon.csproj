@@ -133,6 +133,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlertsController.cs" />
     <Compile Include="Controllers\CariPanelController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CurrentController.cs" />
@@ -2870,11 +2871,13 @@
     <Content Include="Views\Shared\_CariLayout.cshtml" />
     <Content Include="Views\CariPanel\Index.cshtml" />
     <Content Include="Views\CariPanel\Siparislerim.cshtml" />
+    <Content Include="Views\Alerts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Fonts\" />
     <Folder Include="Image\" />
+    <Folder Include="Views\Deneme\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
