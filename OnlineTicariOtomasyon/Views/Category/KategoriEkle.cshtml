@@ -3,7 +3,7 @@
     ViewBag.Title = "KategoriEkle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
+<script src="~/Scripts/jquery-3.4.1.js"></script>
 <br />
 <h2>Yeni Kategori Sayfası</h2>
 <br />
@@ -12,6 +12,11 @@
     <p></p>
     @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
     <br />
-    <button class="btn btn-outline-dark">Kaydet</button>
-    <a href="/Category/Index/" class="btn btn-outline-dark">Geri</a>
+    <button class="btn btn-outline-dark" id="Btn1">Kaydet</button>
+    <a href="/Category/Index/"  class="btn btn-outline-dark">Geri</a>
+    <script>
+        $('#Btn1').click(function(){
+            alert("Kategori başarılı bir şekilde eklendi")
+        });
+    </script>
 </form>

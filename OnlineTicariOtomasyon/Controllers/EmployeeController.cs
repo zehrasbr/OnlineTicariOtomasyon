@@ -56,7 +56,6 @@ namespace OnlineTicariOtomasyon.Controllers
             var prs = c.Employees.Find(id);
             return View("PersonelGetir",prs);
         }
-
         public ActionResult PersonelGuncelle(Employee p)
         {
             if (Request.Files.Count > 0)
