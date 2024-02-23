@@ -1,4 +1,5 @@
-# OnlineTicariOtomasyon İçerik
+ONLINE E-COMMERCE AUTOMATION
+This project is an online commerce automation. You can sell products, check employee profiles, product information, current management, employee profiles and more. It is a dynamic commerce automation.
 Layout Kontrolü
 
 Controller Yapısı
